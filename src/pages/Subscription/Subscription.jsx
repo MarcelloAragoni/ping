@@ -1,7 +1,7 @@
 
 export default function SubscriptionPage(){
 	return (
-		<div>
+		<Fragment>
 			<div className="info">
 				<h1>PING.</h1>
 				<p>We are lauching soon!</p>
@@ -9,7 +9,8 @@ export default function SubscriptionPage(){
 			</div>
 			<div className="subscription">
 				<input type="text" />
+				<button></button>
 			</div>			
-		</div>
+		</Fragment>
 	)
 }
