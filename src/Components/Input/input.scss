@@ -1,0 +1,15 @@
+input {
+  display: flex;
+  height: 30px;
+  border-radius: 20px;
+
+  &::placeholder {
+    padding-left: 10px;
+    color: gray;
+  }
+
+  &:focus-visible {
+    outline: none !important;
+  }
+
+}
