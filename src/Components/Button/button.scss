@@ -1,0 +1,14 @@
+.button {
+  height: 40px;
+  border-width: 0px;
+  color: white;
+  font-weight: bold;
+  padding-inline: 30px;
+  justify-self: center;
+
+  &--news {
+    background-color: #3E6CEC;
+    background-repeat: repeat;
+    border-radius: 25px;
+  }
+}
