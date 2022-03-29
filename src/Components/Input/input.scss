@@ -1,15 +1,18 @@
 input {
   display: flex;
   height: 30px;
+  width: 250px;
   border-radius: 20px;
+  border-color: #DEDFE1;
+  margin-top: 10px;
+  border-style: solid;
 
   &::placeholder {
     padding-left: 10px;
-    color: gray;
+    color: #DEDFE1;
   }
 
   &:focus-visible {
     outline: none;
   }
-
 }
