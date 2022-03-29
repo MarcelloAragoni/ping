@@ -1,9 +1,7 @@
 import SubscriptionPage from "./pages/Subscription/Subscription";
 
 function App() {
-  return(
-    <SubscriptionPage/>
-  );
+  return <SubscriptionPage />;
 }
 
 export default App;
