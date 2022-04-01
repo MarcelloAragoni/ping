@@ -1,5 +1,6 @@
 import Button from "../../Components/Button/Button";
 import Input from "../../Components/Input/input";
+
 import "./Subscription.scss";
 
 export default function SubscriptionPage() {
