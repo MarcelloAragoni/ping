@@ -8,8 +8,7 @@
     margin-bottom: 10px;
     font-size: 30px;
 
-    &::after {
-      content: ".";
+    span {
       color: blue;
     }
   }
@@ -19,15 +18,14 @@
     font-size: 40px;
     color: #919191;
 
-    &::after {
-      content: "soon!";
+    span {
       font-weight: bold;
       color: black;
     }
   }
 
   >p+p {
-    margin: 0px 0px 10px 0px !important;
+    margin: 0px 0px 20px 0px !important;
     font-size: 16px;
     color: black;
 

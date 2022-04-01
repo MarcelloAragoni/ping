@@ -7,8 +7,12 @@ export default function SubscriptionPage() {
   return (
     <>
       <div className="info">
-        <h1>PING</h1>
-        <p>We are lauching </p>
+        <h1>
+          PING <span>.</span>
+        </h1>
+        <p>
+          We are lauching <span>soon!</span>
+        </p>
         <p>Subscribe and get notified</p>
       </div>
       <div className="subscription">
