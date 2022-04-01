@@ -1,0 +1,49 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+
+    &::after {
+      content: ".";
+      color: blue;
+    }
+  }
+
+  p {
+    font-size: 40px;
+    margin: 10px 0px !important;
+    color: #919191;
+
+    &::after {
+      content: "soon!";
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  >p+p {
+    font-size: 16px;
+    color: black;
+    margin: 0px 0px 10px 0px !important;
+
+    &::after {
+      content: none;
+    }
+  }
+
+}
+
+.subscription {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+
+  *+* {
+    margin-left: 15px;
+  }
+}
