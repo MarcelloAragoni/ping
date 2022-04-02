@@ -1,9 +1,16 @@
+import { useState } from "react";
 import Button from "../../Components/Button/Button";
 import Input from "../../Components/Input/input";
 
 import "./Subscription.scss";
 
 export default function SubscriptionPage() {
+  const [inputState, setInputState] = useState("");
+
+  function handleButtonClick() {
+    window.alert(inputState);
+  }
+
   return (
     <>
       <div className="info">
@@ -16,8 +23,14 @@ export default function SubscriptionPage() {
         <p>Subscribe and get notified</p>
       </div>
       <div className="subscription">
-        <Input name="SubEmail" placeholder="Your email address..." />
-        <Button type="primary" text="Notify Me" />
+        <Input
+          setInputState={setInputState}
+          value={inputState}
+          type="text"
+          name="SubEmail"
+          placeholder="Your email address..."
+        />
+        <Button onClick={handleButtonClick} type="primary" text="Notify Me" />
       </div>
     </>
   );
