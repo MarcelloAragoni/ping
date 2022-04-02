@@ -10,6 +10,7 @@ export default function Input({
   function handleChange(event) {
     setInputState(event.target.value);
   }
+  
   return (
     <input
       onChange={handleChange}

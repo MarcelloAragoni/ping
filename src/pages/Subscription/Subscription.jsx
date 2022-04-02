@@ -6,9 +6,11 @@ import "./Subscription.scss";
 
 export default function SubscriptionPage() {
   const [inputState, setInputState] = useState("");
+
   function handleButtonClick() {
     window.alert(inputState);
   }
+
   return (
     <>
       <div className="info">
