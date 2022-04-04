@@ -11,6 +11,14 @@ export default function SubscriptionPage() {
     window.alert(inputState);
   }
 
+  function handleRevertButton() {
+    window.alert(revertButton(inputState));
+  }
+
+  function revertButton(s) {
+    return s.split("").reverse().join("");
+  }
+
   return (
     <>
       <div className="info">
@@ -31,6 +39,11 @@ export default function SubscriptionPage() {
           placeholder="Your email address..."
         />
         <Button onClick={handleButtonClick} type="primary" text="Notify Me" />
+        <Button
+          onClick={handleRevertButton}
+          type="primary"
+          text="Revert Text"
+        />
       </div>
     </>
   );
