@@ -12,11 +12,11 @@ export default function SubscriptionPage() {
   }
 
   function handleRevertButton() {
-    window.alert(revertButton(inputState));
+    window.alert(revertText(inputState));
   }
 
-  function revertButton(s) {
-    return s.split("").reverse().join("");
+  function revertText(text) {
+    return text.split("").reverse().join("");
   }
 
   return (
